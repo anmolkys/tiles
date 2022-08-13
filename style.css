@@ -6,46 +6,8 @@ body{
   background-attachment: fixed;
   justify-content: center;
 }
-form{
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-  visibility: visible;
-}
-#tiles{
-  visibility: hidden;
-}
-#box {
-  text-align: center;
-  display: grid;
-  height: 900px;
-  width: 900px;
-  border: 2px solid red;
-  box-sizing: border-box;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  margin-top: 20px;
-}
 
-#row{
-  text-align: center;
-  background-image: url("https://stringfixer.com/files/555853802.jpg");
-  margin: 1px;
-  background-color: red;
-  object-fit: contain;
-  overflow: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-}
-
-
-#row:hover{
-  filter: blur(4px);
-}
-
-
-#reload,#submit{
+#submit{
   background-color: #c2fbd7;
   border-radius: 100px;
   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
@@ -63,11 +25,8 @@ form{
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#reload{
-  text-align: center;
-}
 
-#reload:hover, #submit:hover{
+#submit:hover{
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
@@ -134,4 +93,8 @@ center > h4 { color: #00a0d1; margin-top: 50px; }
 
 .grower .submit button:hover {
   color: #3498db;
+}
+#footer-info #icon-love{
+  color: #e74c3c !important; 
+  font-size: inherit !important;
 }
