@@ -18,7 +18,7 @@ function maker(){
   }
   
 }
-const songs=["audio/sound.mp3","audio/sound1.mp3"]
+const songs=["audio/sound.mp3","../audio/sound1.mp3"]
 function choose(){
 
 }
