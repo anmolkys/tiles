@@ -22,8 +22,10 @@ body{
 #row {
     text-align: center;
     background-image: url("https://stringfixer.com/files/555853802.jpg");
+    opacity:0.7;
     margin: 1px;
-    background-color: red;
+    background-color: white;
+    color:#eee;
     object-fit: contain;
     overflow: auto;
     text-align: center;
