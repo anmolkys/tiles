@@ -18,11 +18,12 @@ function maker(){
   }
   
 }
-const songs=["audio/sound.mp3","../audio/sound1.mp3"]
+const songs=["../audio/sound.mp3","../audio/sound1.mp3"]
 function choose(){
 
 }
-let song=new Audio(songs[0]);
+let r=Math.floor(Math.random() * 2);
+let song=new Audio(songs[r]);
 function play(){
   song.play();
 }
