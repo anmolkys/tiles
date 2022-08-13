@@ -1,23 +1,25 @@
 function reload(){
-  location.reload();
-}
-
-function maker(){ 
-  let x=document.querySelector('input').value;
-  console.log(x);
-  document.getElementById('growing').style.visibility="hidden";
-  document.getElementById('tiles').style.visibility="visible";
-  var e = document.getElementById('box'); 
-  for(let i=0;i<=x-1;i++){
-    let tile=document.createElement('div');
-    tile.id="row";
-    tile.setAttribute('onclick','player()');
-    tile.innerHTML="Press Me Senpai";
-    e.appendChild(tile);
-
+  function return1(){
+    window.location.href = 'index.html';
   }
-  
+  return return1();
 }
+let x=localStorage.getItem("variable");
+console.log(x);
+var e = document.getElementById('box');
+for (let i = 0; i <= x - 1; i++) {
+  let tile = document.createElement('div');
+  tile.id = "row";
+  tile.setAttribute('onclick', 'player()');
+  tile.innerHTML = "Press Me Senpai";
+  e.appendChild(tile);
+}
+
+
+
+
+
+
 /*const songs=["/audio2/DO.wav","/audio2/RE.wav","/audio2/MI.wav","/audio2/FA.wav","/audio2/SO.wav","/audio2/LA.wav","/audio2/TI.wav"];
 let banned=[];
 function rnd(){
