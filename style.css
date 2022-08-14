@@ -1,10 +1,48 @@
+#content{
+  visibility: hidden;
+}
+#loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+#loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+#loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+#loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+#loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #link{
   color: #eee;
 }
 body{
-  
   display: flex;
-  background-image: url("https://giffiles.alphacoders.com/150/15011.gif");
+  background-image: url("http://m.gettywallpapers.com/wp-content/uploads/2021/09/Sad-Anime-Desktop-Wallpaper-1536x864.jpg");
+  background-color: rgb(4, 4, 4);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -40,8 +78,9 @@ body{
   justify-content: center;
   padding: 100px;
 }
+
 center > h4 { color: #00a0d1; margin-top: 50px; }
-    body { margin: 0; font-family: Arial; background-color: #3498db; }
+    body { margin: 0; font-family: Arial; background-color: #070707; }
     ul#growing { display: table; list-style: none; margin: 150px auto 0 auto; padding: 0; }
     ul#growing > li { float: left; margin-right: 20px; margin-bottom: 20px; padding: 10px 10px; }
     ul#growing > li:last-child { margin-right: 0; }
