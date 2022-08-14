@@ -49,7 +49,7 @@ function player(){
 }
 */
 function player(){
-  let song = new Audio("/audio/sound.mp3");
+  let song = new Audio("../audio/sound.mp3");
   song.play()
 }
 
