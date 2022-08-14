@@ -10,50 +10,49 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <ul id="growing">
-        <li>
-            <div class="grower">
-                <div class="input">
-                    <input type="number" placeholder="Enter a Number"/>
-                </div>
-                <div class="submit">
-                    <button type="submit" id="submit" onclick="maker()">
-                        Submit
-                    </button>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-
-
-
-    <!--form onsubmit="return false">
-        <input type="number" placeholder="Enter a Number" id="taker">
-        <button onclick="maker()" id="submit">Submit</button>
-    </form>
+    <div id="loader">
+        <div></div>
+    </div>
+    <div id="content">
     
-    <div id="tiles">
-        <button onclick="reload()" id="reload">Reload</button>
-        <div id="box">
+        <ul id="growing">
+            <li>
+                <div class="grower">
+                    <div class="input">
+                        <input type="number" placeholder="Enter a Number" />
+                    </div>
+                    <div class="submit">
+                        <button type="submit" id="submit" onclick="maker()">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    
+        <style type="text/css">
+            #footer {
+                position: absolute;
+                bottom: 0;
+                height: 40px;
+                margin-top: 40px;
+            }
+    
+            .text {
+                color: aliceblue;
+            }
+        </style>
+        <div id="footer">
+            <style>
+                .heart {
+                    color: #e25555;
+                }
+            </style>
+            <div class="text">
+                Made with <span class="heart">❤</span> by <a id="link" href="https://github.com/anmoliscool">Anmol(Kris)</a>
+            </div>
         </div>
-    </div-->
-    <style type="text/css">
-        #footer {
-          position : absolute;
-          bottom : 0;
-          height : 40px;
-          margin-top : 40px;
-        }
-        .text{
-            color: aliceblue;
-        }
-      </style>
-      <div id="footer">
-        <style>.heart{ color:#e25555; }</style>
-        <div class="text">
-            Made with <span class="heart">❤</span> by <a id="link" href="https://github.com/anmoliscool">Anmol(Kris)</a>
-        </div>
-      </div>
+    </div>
+ 
 </body>
 </html>
