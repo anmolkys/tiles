@@ -11,6 +11,7 @@ for (let i = 0; i <= x - 1; i++) {
   let tile = document.createElement('div');
   tile.id = "row";
   tile.setAttribute('onmouseover', 'chooser()');
+  tile.setAttribute('onmouseleave', 'pauser()');
   tile.innerHTML = "Press Me Senpai";
   e.appendChild(tile);
 }
@@ -34,4 +35,7 @@ function chooser(){
 function player(i){
   let song = new Audio("audio/audio"+i+".wav");
   song.play()
+}
+function pauser(){
+  song.pause()
 }
