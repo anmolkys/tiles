@@ -12,7 +12,7 @@ for (let i = 0; i <= x - 1; i++) {
   tile.id = "row";
   tile.className="til";
   tile.setAttribute('onmouseover', 'chooser()');
-  tile.innerHTML = "Press Me Senpai";
+  tile.innerHTML = "";
   e.appendChild(tile);
 }
 function Englishdisplayer(i){
