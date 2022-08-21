@@ -55,8 +55,8 @@ function hindiplayer(){
 }
 function chooserr(){
   let lol = -1;
-  if (lol>=7 || lol==-1){
-    i=rand(0,7);
+  if (lol>=6 || lol==-1){
+    i=rand(0,6);
     hindiplayer(i);
     Hindidisplayer(i);
   }
