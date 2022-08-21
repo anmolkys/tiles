@@ -1,3 +1,4 @@
+alert("If music doesn't play, please wait for it to load.")
 function reload(){
   function return1(){
     window.location.href = 'index.html';
@@ -75,6 +76,8 @@ function toggleCheck() {
     }
     document.getElementById("lg").textContent="भाषा: हिन्दी";
     document.getElementById("lg").style.width="180px";
+    document.querySelector("body").style.backgroundImage="url('https://wallpaperaccess.com/full/4291371.jpg')";
+
     
   } else {
     let els = document.querySelectorAll("#row");
