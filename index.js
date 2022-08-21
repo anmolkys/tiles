@@ -33,8 +33,7 @@ function rand(s,e){
 }
 let lol=0;
 function chooser(){
-  let lol = -1;
-  if (lol>=6 || lol==-1){
+  if (i>=6 || lol==-1){
     i=rand(0,6);
     player(i);
     Englishdisplayer(i);
@@ -42,7 +41,7 @@ function chooser(){
   else{
     player(i);
     Englishdisplayer(i);
-    i=lol+1;
+    i=i+1;
   }
 }
   
@@ -55,8 +54,8 @@ function hindiplayer(){
   song.play()
 }
 function chooserr(){
-  let lol=-1;
-  if (lol>=6 || lol==-1){
+  let lol=0;
+  if (i>=6 || lol==-1){
     i=rand(0,6);
     hindiplayer(i);
     Hindidisplayer(i);
@@ -64,7 +63,7 @@ function chooserr(){
   else{
     hindiplayer(i);
     Hindidisplayer(i);
-    i=lol+1;
+    i=i+1;
   }
 }
 
