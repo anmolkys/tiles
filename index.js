@@ -8,7 +8,8 @@ function reload(){
 let x=localStorage.getItem("variable");
 console.log(x);
 var e = document.getElementById('box');
-for (let i = 0; i <= x - 1; i++) {
+e.setAttribute('style', `border: solid 1.1px red; display: grid; grid-template-columns: repeat(${x}, 1fr); grid-template-rows: repeat(${x}, 1fr);`)
+for (let i = 0; i <= x*x; i++) {
   let tile = document.createElement('div');
   tile.id = "row";
   tile.className="til";
