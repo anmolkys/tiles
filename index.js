@@ -77,6 +77,7 @@ function toggleCheck() {
     let els = document.querySelectorAll("#row");
     for(var i = 0; i < els.length;  i++){
       els[i].setAttribute("onmouseover","chooserr()");
+      els[i].style.backgroundImage="url('https://www.artistondemand.co.in/images/s/94.jpg')";
     }
     document.getElementById("lg").textContent="भाषा: हिन्दी";
     document.getElementById("lg").style.width="180px";
