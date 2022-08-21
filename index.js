@@ -31,9 +31,8 @@ function rand(s,e){
   let num = s+Math.floor(Math.random()*(e-s+1)+s);
   return num;
 }
-let i=0;
+let lol = -1;
 function chooser(){
-  let lol = -1;
   if (lol>=6 || lol==-1){
     i=rand(0,6);
     player(i);
@@ -55,7 +54,6 @@ function hindiplayer(){
   song.play()
 }
 function chooserr(){
-  let lol = -1;
   if (lol>=6 || lol==-1){
     i=rand(0,6);
     hindiplayer(i);
