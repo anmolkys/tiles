@@ -76,7 +76,6 @@ function toggleCheck() {
     }
     document.getElementById("lg").textContent="भाषा: हिन्दी";
     document.getElementById("lg").style.width="180px";
-    document.querySelector("body").style.backgroundImage="url('https://wallpaperaccess.com/full/7347560.jpg')";
     
   } else {
     let els = document.querySelectorAll("#row");
