@@ -1,5 +1,5 @@
 # Tiles
-**Task 3** : Tiles and Wave!
+**Task 3** : Tiles and Wave! <br />
 **Robovitics** - The official Robotics Club of VIT
 
 > by [Henit Chobisa](https://github.com/henit)
@@ -18,19 +18,53 @@ must have index between i + 1 to 7, including i + 1 and 7.
 
  - If the last played note has an index 7, the next note can be picked from any of the 0 to 7
 indices.
+ 
+ 
+
+## Algorithm
+Firstly , we make a random function which takes two variables as Input and produces a random number between them including both of them .
+
+    function rand(s,e){
+        let num = s+Math.floor(Math.random()*(e-s+1)+s);
+        return num;
+    }
+
+Then , we make the algorithm to play selected music from folder named audio.
+
+    function player(i){
+        let song = new Audio("audio/audio"+i+".wav");
+        song.play()
+    }
+  Lastly , combining the above two functions we make the chooser algorithm which chooses and plays the song when mouse cursor hovers on the tile .
+  
+
+    function chooser(){
+        let lol = -1;
+        if (lol>=6 || lol==-1){
+            i=rand(0,6);
+            player(i);
+        }
+        else{
+            player(i);
+            i=lol+1;
+        }
+    }
+
 
 ## Flow Chart
 
 ```mermaid
 graph LR
-A[Start]
+A[Hover]
+Y((Play i'th Audio))
 X[Random]
-B((If i>7))
-D[Play Music and  Index+1]
+Z[Random]
+B((If i>6 or i=-1))
+D[Play Audio and  i+1]
 A --> X
 X --> B
-B --> X 
+B --> Z
+Z --> Y
 X --> C(else)
 C --> D
-D --> X
 ```
