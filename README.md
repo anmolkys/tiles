@@ -40,9 +40,8 @@ Then , we make the algorithm to play selected music from folder named audio.
     }
   Lastly , combining the above two functions we make the chooser algorithm which chooses and plays the song when mouse cursor hovers on the tile .
   
-
+    let lol = -1;
     function chooser(){
-        let lol = -1;
         if (lol>=6 || lol==-1){
             i=rand(0,6);
             player(i);
