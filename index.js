@@ -33,16 +33,16 @@ function rand(s,e){
 }
 let lol=0;
 function chooser(){
+  let lol = -1;
   if (lol>=6 || lol==-1){
-    let i=rand(0,6);
+    i=rand(0,6);
     player(i);
     Englishdisplayer(i);
   }
   else{
-    let i=rand(i,6);
     player(i);
     Englishdisplayer(i);
-    lol=lol+1;
+    i=lol+1;
   }
 }
   
@@ -55,17 +55,16 @@ function hindiplayer(){
   song.play()
 }
 function chooserr(){
-  let lol=0;
+  let lol=-1;
   if (lol>=6 || lol==-1){
     i=rand(0,6);
     hindiplayer(i);
     Hindidisplayer(i);
   }
   else{
-    let i=rand(i,6);
     hindiplayer(i);
     Hindidisplayer(i);
-    lol=lol+1;
+    i=lol+1;
   }
 }
 
