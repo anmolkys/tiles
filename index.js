@@ -34,7 +34,7 @@ let i=0;
 function chooser(){
   let lol = -1;
   if (lol>=6 || lol==-1){
-    i=rand(0,7);
+    i=rand(0,6);
     player(i);
     Englishdisplayer(i);
   }
