@@ -13,7 +13,7 @@ body{
     display: grid;
     height: 900px;
     width: 900px;
-    border: 2px solid red;
+    border: 1.7px solid red;
     box-sizing: border-box;
     grid-template-columns: auto auto auto;
     padding: 10px;
@@ -21,9 +21,10 @@ body{
 }
 
 #row {
+    border: 1.5px solid black;
     text-align: center;
     background-size:cover;
-    background-image: url("https://i.pinimg.com/736x/7b/d7/98/7bd79852f358c6408adfa77e6fecac08.jpg");
+    opacity:0.5;
     margin: 1px;
     background-color: white;
     color:#eee;
@@ -37,6 +38,7 @@ body{
 
 
 #row:hover {
+    opacity:1;
     transition: transform .5s ease;
     transform: scale(0.9);
     background-image: url("https://gifdb.com/images/high/zenitsu-shamisen-breathing-cf5l4zl5onpzfo9s.gif");
