@@ -22,7 +22,7 @@ body{
 
 #row {
     text-align: center;
-    background-image: url("https://stringfixer.com/files/555853802.jpg");
+    /*background-image: url("https://stringfixer.com/files/555853802.jpg");*/
     opacity:0.7;
     margin: 1px;
     background-color: white;
@@ -213,7 +213,7 @@ h2 {
     ;
   }  
 }
-#btn:before{
+#row:before{
       background: #212121;
 }
 
