@@ -76,7 +76,7 @@ function toggleCheck() {
     }
     document.getElementById("lg").textContent="भाषा: हिन्दी";
     document.getElementById("lg").style.width="180px";
-    document.querySelector("body").style.backgroundImage="url('https://wallpaperaccess.com/full/4291371.jpg')";
+    document.querySelector("body").style.backgroundImage="url('https://static2.tripoto.com/media/filter/tst/img/15546/TripDocument/1442470934_events1.jpg')";
 
     
   } else {
