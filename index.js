@@ -31,7 +31,7 @@ function rand(s,e){
   let num = s+Math.floor(Math.random()*(e-s+1)+s);
   return num;
 }
-let lol=0;
+let i=0;
 function chooser(){
   let lol = -1;
   if (lol>=6 || lol==-1){
@@ -55,7 +55,7 @@ function hindiplayer(){
   song.play()
 }
 function chooserr(){
-  let lol=-1;
+  let lol = -1;
   if (lol>=6 || lol==-1){
     i=rand(0,6);
     hindiplayer(i);
@@ -76,8 +76,6 @@ function toggleCheck() {
     }
     document.getElementById("lg").textContent="भाषा: हिन्दी";
     document.getElementById("lg").style.width="180px";
-    document.querySelector("body").style.backgroundImage="url('https://static2.tripoto.com/media/filter/tst/img/15546/TripDocument/1442470934_events1.jpg')";
-
     
   } else {
     let els = document.querySelectorAll("#row");
