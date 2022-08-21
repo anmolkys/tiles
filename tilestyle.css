@@ -24,7 +24,7 @@ body{
     border: 1.5px solid black;
     text-align: center;
     background-size:cover;
-    background-img:url("https://ae01.alicdn.com/kf/HTB1bdAVJpXXXXXfXVXXq6xXFXXXV/-.jpg");
+    opacity:0.8;
     margin: 1px;
     background-color: white;
     color:#eee;
