@@ -213,3 +213,16 @@ h2 {
     ;
   }  
 }
+#btn:before{
+      background: #212121;
+}
+
+#row:hover{
+    color: white;
+}
+#row:hover:before{      
+      top: 0;
+      left: 0;
+}
+
+
