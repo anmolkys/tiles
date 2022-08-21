@@ -26,15 +26,17 @@ function Hindidisplayer(i){
 
 }
 
-function rand(s){
-  let num = s+Math.floor(Math.random()*(8-s));
+function rand(s,e){
+  let num = s+Math.floor(Math.random()*(e-s+1)+s);
   return num;
 }
 let i=0;
 function chooser(){
-  let lol = rand(i);
-  if (lol>=7){
-    i=0;
+  let lol = -1;
+  if (lol>=7 || lol==-1){
+    i=rand(0,7);
+    player(i);
+    Englishdisplayer(i);
   }
   else{
     player(i);
@@ -52,9 +54,11 @@ function hindiplayer(){
   song.play()
 }
 function chooserr(){
-  let lol = rand(i);
-  if (lol>=7){
-    i=0;
+  let lol = -1;
+  if (lol>=7 || lol==-1){
+    i=rand(0,7);
+    hindiplayer(i);
+    Hindidisplayer(i);
   }
   else{
     hindiplayer(i);
