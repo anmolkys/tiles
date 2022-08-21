@@ -1,8 +1,3 @@
-window.onload=function(){
-    document.getElementById("content").style.visibility="visible";
-    document.getElementById("loader").remove();
-}
-
 function reload(){
   function return1(){
     window.location.href = 'index.html';
