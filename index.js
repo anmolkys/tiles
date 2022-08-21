@@ -32,13 +32,15 @@ function rand(s,e){
   return num;
 }
 let lol=0;
+let i=0;
 function chooser(){
   if (i>=6 || lol==-1){
-    i=rand(0,6);
+    let i=rand(0,6);
     player(i);
     Englishdisplayer(i);
   }
   else{
+    let i=rand(i,6);
     player(i);
     Englishdisplayer(i);
     i=i+1;
@@ -55,12 +57,14 @@ function hindiplayer(){
 }
 function chooserr(){
   let lol=0;
+  let i=0;
   if (i>=6 || lol==-1){
     i=rand(0,6);
     hindiplayer(i);
     Hindidisplayer(i);
   }
   else{
+    let i=rand(i,6);
     hindiplayer(i);
     Hindidisplayer(i);
     i=i+1;
