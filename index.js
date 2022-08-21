@@ -74,8 +74,11 @@ function toggleCheck() {
     for(var i = 0; i < els.length;  i++){
       els[i].setAttribute("onmouseover","chooserr()");
     }
+    alert("If the audio doesn't play , wait for it to load");
     document.getElementById("lg").textContent="भाषा: हिन्दी";
     document.getElementById("lg").style.width="180px";
+    document.querySelector("body").style.backgroundImage="url('https://static2.tripoto.com/media/filter/tst/img/15546/TripDocument/1442470934_events1.jpg')";
+
     
   } else {
     let els = document.querySelectorAll("#row");
