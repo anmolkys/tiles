@@ -2,7 +2,7 @@
 **Task 3** : Tiles and Wave! <br />
 **Robovitics** - The official Robotics Club of VIT
 
-> by [Henit Chobisa](https://github.com/henit)
+> by [Henit Chobisa](https://github.com/henit-chobisa)
 
  - The problem is to create a matrix of order n where each (row, column) is a tile, the order n has
 to be taken from the user and the outliers should be taken care by the developer, this means
