@@ -1,5 +1,7 @@
 ![Hello](https://i.pinimg.com/originals/c0/7a/0e/c07a0e54601516dbf8b399832636507a.gif) <br />
 
+<a href=”https://www.linkedin.com/in/yushi95/"><img align=”left” src=”https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=”icon | LinkedIn” width=”21px”/></a>
+
 
 # Tiles
 **Task 3** : Tiles and Wave! <br />
